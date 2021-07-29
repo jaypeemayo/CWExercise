@@ -99,6 +99,7 @@ namespace CWExerciseApi.BLL.Services
                         while (await reader.ReadAsync())
                         {
                             var product = new Product();
+                            product.ProductID = (int)reader["productid"];
                             product.Name = reader["name"].ToString();
                             product.Price = (decimal)reader["price"];
                             product.Type = (ProductTypeEnum)reader["type"];
@@ -128,11 +129,11 @@ namespace CWExerciseApi.BLL.Services
                     {
                         if (await reader.ReadAsync())
                         {
+                            product.ProductID = (int)reader["productid"];
                             product.Name = reader["name"].ToString();
                             product.Price = (decimal)reader["price"];
                             product.Type = (ProductTypeEnum)reader["type"];
                             product.Active = (bool)reader["active"];
-
                         }
                     }
                 }
