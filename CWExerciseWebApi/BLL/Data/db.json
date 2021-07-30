@@ -1,0 +1,827 @@
+﻿[
+    {
+      "id": 62,
+      "name": "Nola Donnelly",
+      "appointments": [
+        {
+          "id": 1,
+          "clientName": "Leonora Bode",
+          "cost": 89,
+          "revenue": 90,
+          "date": "2015-04-15T14:08:14.941Z",
+          "type": " Type 3",
+          "duration": 38
+        },
+        {
+          "id": 33,
+          "clientName": "Merle Gibson",
+          "cost": 84,
+          "revenue": 25,
+          "date": "2015-05-06T14:12:34.186Z",
+          "type": " Type 2",
+          "duration": 35
+        },
+        {
+          "id": 45,
+          "clientName": "Garnet McGlynn",
+          "cost": 80,
+          "revenue": 15,
+          "date": "2015-05-27T14:16:53.431Z",
+          "type": " Type 3",
+          "duration": 39
+        },
+        {
+          "id": 44,
+          "clientName": "Santos Rodriguez",
+          "cost": 98,
+          "revenue": 5,
+          "date": "2015-06-16T14:21:00.331Z",
+          "type": "Type 1",
+          "duration": 59
+        },
+        {
+          "id": 95,
+          "clientName": "Elva Gerlach",
+          "cost": 12,
+          "revenue": 12,
+          "date": "2015-07-12T14:26:21.301Z",
+          "type": " Type 2",
+          "duration": 38
+        },
+        {
+          "id": 5,
+          "clientName": "Miss Felipe Waelchi",
+          "cost": 46,
+          "revenue": 41,
+          "date": "2015-08-02T14:30:40.546Z",
+          "type": " Type 2",
+          "duration": 52
+        },
+        {
+          "id": 7,
+          "clientName": "Mr. Augustus Klocko",
+          "cost": 45,
+          "revenue": 95,
+          "date": "2015-08-17T14:33:45.721Z",
+          "type": " Type 2",
+          "duration": 56
+        },
+        {
+          "id": 5,
+          "clientName": "Ronny Orn",
+          "cost": 31,
+          "revenue": 55,
+          "date": "2015-09-01T14:36:50.896Z",
+          "type": " Type 4",
+          "duration": 21
+        },
+        {
+          "id": 60,
+          "clientName": "Ezequiel Kemmer",
+          "cost": 33,
+          "revenue": 82,
+          "date": "2015-09-29T14:42:36.556Z",
+          "type": " Type 2",
+          "duration": 50
+        },
+        {
+          "id": 53,
+          "clientName": "Pattie Rice DDS",
+          "cost": 91,
+          "revenue": 86,
+          "date": "2015-10-09T14:44:40.006Z",
+          "type": " Type 2",
+          "duration": 30
+        },
+        {
+          "id": 5,
+          "clientName": "Joseph Ullrich",
+          "cost": 44,
+          "revenue": 63,
+          "date": "2015-10-27T14:48:22.216Z",
+          "type": " Type 3",
+          "duration": 38
+        },
+        {
+          "id": 80,
+          "clientName": "Tressa Nolan",
+          "cost": 57,
+          "revenue": 96,
+          "date": "2015-11-09T14:51:02.701Z",
+          "type": "Type 1",
+          "duration": 28
+        },
+        {
+          "id": 77,
+          "clientName": "Gustave Schuppe",
+          "cost": 31,
+          "revenue": 52,
+          "date": "2015-12-03T14:55:58.981Z",
+          "type": " Type 4",
+          "duration": 25
+        },
+        {
+          "id": 69,
+          "clientName": "Thelma Kessler",
+          "cost": 64,
+          "revenue": 65,
+          "date": "2015-12-17T14:58:51.811Z",
+          "type": "Type 1",
+          "duration": 44
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Dina Gerhold",
+      "appointments": [
+        {
+          "id": 54,
+          "clientName": "Magnolia Heaney",
+          "cost": 38,
+          "revenue": 59,
+          "date": "2016-01-16T15:05:02.161Z",
+          "type": " Type 4",
+          "duration": 23
+        },
+        {
+          "id": 32,
+          "clientName": "Orval Von",
+          "cost": 5,
+          "revenue": 89,
+          "date": "2016-01-30T15:07:54.991Z",
+          "type": " Type 4",
+          "duration": 46
+        },
+        {
+          "id": 4,
+          "clientName": "Daphnee Kuhn",
+          "cost": 42,
+          "revenue": 20,
+          "date": "2016-02-16T15:11:24.856Z",
+          "type": " Type 4",
+          "duration": 20
+        },
+        {
+          "id": 93,
+          "clientName": "Dax Streich",
+          "cost": 87,
+          "revenue": 25,
+          "date": "2016-03-16T15:17:22.861Z",
+          "type": " Type 4",
+          "duration": 50
+        },
+        {
+          "id": 80,
+          "clientName": "Emelie Kulas",
+          "cost": 9,
+          "revenue": 11,
+          "date": "2016-04-06T15:21:42.106Z",
+          "type": " Type 2",
+          "duration": 55
+        },
+        {
+          "id": 59,
+          "clientName": "Levi Hilll",
+          "cost": 21,
+          "revenue": 70,
+          "date": "2016-05-01T15:26:50.731Z",
+          "type": " Type 4",
+          "duration": 25
+        },
+        {
+          "id": 80,
+          "clientName": "Leo Gorczany",
+          "cost": 94,
+          "revenue": 43,
+          "date": "2016-05-14T15:29:31.216Z",
+          "type": " Type 2",
+          "duration": 48
+        },
+        {
+          "id": 78,
+          "clientName": "Aric Grant",
+          "cost": 80,
+          "revenue": 71,
+          "date": "2016-06-12T15:35:29.221Z",
+          "type": " Type 4",
+          "duration": 53
+        },
+        {
+          "id": 72,
+          "clientName": "Rollin Grimes",
+          "cost": 32,
+          "revenue": 32,
+          "date": "2016-07-06T15:40:25.501Z",
+          "type": " Type 3",
+          "duration": 42
+        },
+        {
+          "id": 51,
+          "clientName": "Serena Hane",
+          "cost": 30,
+          "revenue": 2,
+          "date": "2016-07-15T15:42:16.606Z",
+          "type": " Type 3",
+          "duration": 37
+        },
+        {
+          "id": 29,
+          "clientName": "Marianna Huels",
+          "cost": 45,
+          "revenue": 80,
+          "date": "2016-08-02T15:45:58.816Z",
+          "type": " Type 3",
+          "duration": 22
+        },
+        {
+          "id": 21,
+          "clientName": "Zion Witting",
+          "cost": 2,
+          "revenue": 11,
+          "date": "2016-08-23T15:50:18.061Z",
+          "type": "Type 1",
+          "duration": 36
+        },
+        {
+          "id": 81,
+          "clientName": "Dr. Gideon Keeling",
+          "cost": 43,
+          "revenue": 14,
+          "date": "2016-09-10T15:54:00.271Z",
+          "type": " Type 2",
+          "duration": 41
+        },
+        {
+          "id": 6,
+          "clientName": "Summer Deckow V",
+          "cost": 31,
+          "revenue": 93,
+          "date": "2016-09-23T15:56:40.756Z",
+          "type": " Type 2",
+          "duration": 33
+        },
+        {
+          "id": 22,
+          "clientName": "Ms. Terry Medhurst",
+          "cost": 46,
+          "revenue": 98,
+          "date": "2016-10-02T15:58:31.861Z",
+          "type": " Type 4",
+          "duration": 52
+        },
+        {
+          "id": 57,
+          "clientName": "Erich Leannon",
+          "cost": 12,
+          "revenue": 10,
+          "date": "2016-10-14T16:01:00.001Z",
+          "type": " Type 3",
+          "duration": 29
+        },
+        {
+          "id": 18,
+          "clientName": "Jolie Prohaska",
+          "cost": 15,
+          "revenue": 49,
+          "date": "2016-10-25T16:03:15.796Z",
+          "type": "Type 1",
+          "duration": 16
+        },
+        {
+          "id": 34,
+          "clientName": "Mohamed Rogahn",
+          "cost": 94,
+          "revenue": 22,
+          "date": "2016-11-21T16:08:49.111Z",
+          "type": "Type 1",
+          "duration": 37
+        },
+        {
+          "id": 9,
+          "clientName": "Margie Jones",
+          "cost": 33,
+          "revenue": 52,
+          "date": "2016-12-18T16:14:22.426Z",
+          "type": " Type 3",
+          "duration": 59
+        },
+        {
+          "id": 18,
+          "clientName": "Oda Jones",
+          "cost": 60,
+          "revenue": 84,
+          "date": "2017-01-10T16:19:06.361Z",
+          "type": " Type 2",
+          "duration": 50
+        },
+        {
+          "id": 97,
+          "clientName": "Burnice Ankunding",
+          "cost": 70,
+          "revenue": 56,
+          "date": "2017-01-24T16:21:59.191Z",
+          "type": " Type 4",
+          "duration": 52
+        },
+        {
+          "id": 93,
+          "clientName": "Erik Reynolds",
+          "cost": 92,
+          "revenue": 89,
+          "date": "2017-02-02T16:23:50.296Z",
+          "type": " Type 4",
+          "duration": 59
+        },
+        {
+          "id": 85,
+          "clientName": "Gunnar Gaylord",
+          "cost": 18,
+          "revenue": 48,
+          "date": "2017-03-04T16:30:00.646Z",
+          "type": " Type 4",
+          "duration": 54
+        },
+        {
+          "id": 79,
+          "clientName": "Ona Will DDS",
+          "cost": 26,
+          "revenue": 51,
+          "date": "2017-03-28T16:34:56.926Z",
+          "type": " Type 4",
+          "duration": 25
+        },
+        {
+          "id": 38,
+          "clientName": "Annalise Hane",
+          "cost": 76,
+          "revenue": 9,
+          "date": "2017-04-14T16:38:26.791Z",
+          "type": " Type 2",
+          "duration": 41
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Irving Howe",
+      "appointments": [
+        {
+          "id": 73,
+          "clientName": "Edwin Welch",
+          "cost": 19,
+          "revenue": 97,
+          "date": "2017-04-26T16:40:54.931Z",
+          "type": "Type 1",
+          "duration": 36
+        },
+        {
+          "id": 74,
+          "clientName": "Miss Kiarra Wintheiser",
+          "cost": 65,
+          "revenue": 84,
+          "date": "2017-05-23T16:46:28.246Z",
+          "type": "Type 1",
+          "duration": 23
+        },
+        {
+          "id": 55,
+          "clientName": "Adaline Willms",
+          "cost": 77,
+          "revenue": 80,
+          "date": "2017-06-11T16:50:22.801Z",
+          "type": " Type 4",
+          "duration": 58
+        },
+        {
+          "id": 8,
+          "clientName": "Kelli Hintz",
+          "cost": 85,
+          "revenue": 78,
+          "date": "2017-06-29T16:54:05.011Z",
+          "type": "Type 1",
+          "duration": 18
+        },
+        {
+          "id": 56,
+          "clientName": "Henri Ebert",
+          "cost": 84,
+          "revenue": 99,
+          "date": "2017-07-08T16:55:56.116Z",
+          "type": "Type 1",
+          "duration": 57
+        },
+        {
+          "id": 56,
+          "clientName": "Nyasia Reichel",
+          "cost": 35,
+          "revenue": 20,
+          "date": "2017-07-18T16:57:59.566Z",
+          "type": " Type 3",
+          "duration": 45
+        },
+        {
+          "id": 37,
+          "clientName": "Edythe Sporer",
+          "cost": 8,
+          "revenue": 69,
+          "date": "2017-08-14T17:03:32.881Z",
+          "type": " Type 2",
+          "duration": 55
+        },
+        {
+          "id": 90,
+          "clientName": "Wiley Rohan",
+          "cost": 16,
+          "revenue": 79,
+          "date": "2017-08-26T17:06:01.021Z",
+          "type": " Type 4",
+          "duration": 27
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Halle Christiansen",
+      "appointments": [
+        {
+          "id": 44,
+          "clientName": "Marge Morissette",
+          "cost": 29,
+          "revenue": 89,
+          "date": "2017-09-25T17:12:11.371Z",
+          "type": " Type 4",
+          "duration": 24
+        },
+        {
+          "id": 13,
+          "clientName": "Jeramie Kihn",
+          "cost": 56,
+          "revenue": 80,
+          "date": "2017-10-08T17:14:51.856Z",
+          "type": " Type 3",
+          "duration": 24
+        },
+        {
+          "id": 44,
+          "clientName": "Roberto Goldner",
+          "cost": 12,
+          "revenue": 55,
+          "date": "2017-10-24T17:18:09.376Z",
+          "type": " Type 4",
+          "duration": 39
+        },
+        {
+          "id": 33,
+          "clientName": "Lavon Nikolaus",
+          "cost": 55,
+          "revenue": 54,
+          "date": "2017-11-09T17:21:26.896Z",
+          "type": "Type 1",
+          "duration": 25
+        },
+        {
+          "id": 75,
+          "clientName": "Greyson Wuckert",
+          "cost": 72,
+          "revenue": 73,
+          "date": "2017-12-05T17:26:47.866Z",
+          "type": " Type 4",
+          "duration": 41
+        },
+        {
+          "id": 73,
+          "clientName": "Bennie Kulas",
+          "cost": 43,
+          "revenue": 41,
+          "date": "2017-12-26T17:31:07.111Z",
+          "type": " Type 4",
+          "duration": 57
+        },
+        {
+          "id": 75,
+          "clientName": "Theo Howe",
+          "cost": 69,
+          "revenue": 4,
+          "date": "2018-01-20T17:36:15.736Z",
+          "type": " Type 4",
+          "duration": 45
+        },
+        {
+          "id": 3,
+          "clientName": "Claud Bode",
+          "cost": 3,
+          "revenue": 72,
+          "date": "2018-02-12T17:40:59.671Z",
+          "type": " Type 4",
+          "duration": 52
+        },
+        {
+          "id": 14,
+          "clientName": "Verda Ferry",
+          "cost": 50,
+          "revenue": 90,
+          "date": "2018-03-01T17:44:29.536Z",
+          "type": "Type 1",
+          "duration": 54
+        },
+        {
+          "id": 71,
+          "clientName": "Jessie Kling I",
+          "cost": 62,
+          "revenue": 72,
+          "date": "2018-03-28T17:50:02.851Z",
+          "type": "Type 1",
+          "duration": 54
+        },
+        {
+          "id": 52,
+          "clientName": "Tania Shanahan",
+          "cost": 5,
+          "revenue": 3,
+          "date": "2018-04-24T17:55:36.166Z",
+          "type": " Type 2",
+          "duration": 58
+        },
+        {
+          "id": 81,
+          "clientName": "Ms. Rodrigo Koss",
+          "cost": 34,
+          "revenue": 77,
+          "date": "2018-05-09T17:58:41.341Z",
+          "type": " Type 4",
+          "duration": 50
+        },
+        {
+          "id": 21,
+          "clientName": "Vesta Davis",
+          "cost": 6,
+          "revenue": 81,
+          "date": "2018-05-30T18:03:00.586Z",
+          "type": " Type 3",
+          "duration": 52
+        },
+        {
+          "id": 40,
+          "clientName": "Anderson Zulauf",
+          "cost": 60,
+          "revenue": 98,
+          "date": "2018-06-27T18:08:46.246Z",
+          "type": "Type 1",
+          "duration": 17
+        },
+        {
+          "id": 17,
+          "clientName": "Roger Steuber",
+          "cost": 30,
+          "revenue": 45,
+          "date": "2018-07-20T18:13:30.181Z",
+          "type": " Type 2",
+          "duration": 57
+        },
+        {
+          "id": 64,
+          "clientName": "Neoma Wyman III",
+          "cost": 25,
+          "revenue": 50,
+          "date": "2018-08-03T18:16:23.011Z",
+          "type": " Type 2",
+          "duration": 54
+        },
+        {
+          "id": 18,
+          "clientName": "Keaton Paucek Sr.",
+          "cost": 9,
+          "revenue": 68,
+          "date": "2018-08-29T18:21:43.981Z",
+          "type": " Type 3",
+          "duration": 33
+        },
+        {
+          "id": 29,
+          "clientName": "Naomie Kuhn",
+          "cost": 4,
+          "revenue": 84,
+          "date": "2018-09-23T18:26:52.606Z",
+          "type": " Type 4",
+          "duration": 21
+        },
+        {
+          "id": 83,
+          "clientName": "Cleveland Sawayn",
+          "cost": 9,
+          "revenue": 71,
+          "date": "2018-10-20T18:32:25.921Z",
+          "type": " Type 4",
+          "duration": 48
+        },
+        {
+          "id": 36,
+          "clientName": "Brooklyn Bergnaum",
+          "cost": 26,
+          "revenue": 57,
+          "date": "2018-11-09T18:36:32.821Z",
+          "type": " Type 3",
+          "duration": 37
+        },
+        {
+          "id": 32,
+          "clientName": "Torey Howell",
+          "cost": 78,
+          "revenue": 80,
+          "date": "2018-11-18T18:38:23.926Z",
+          "type": " Type 4",
+          "duration": 46
+        },
+        {
+          "id": 38,
+          "clientName": "Jaiden Dickinson",
+          "cost": 24,
+          "revenue": 46,
+          "date": "2018-12-16T18:44:09.586Z",
+          "type": " Type 4",
+          "duration": 52
+        },
+        {
+          "id": 94,
+          "clientName": "Kim Bartell Sr.",
+          "cost": 8,
+          "revenue": 94,
+          "date": "2018-12-28T18:46:37.726Z",
+          "type": " Type 3",
+          "duration": 34
+        },
+        {
+          "id": 53,
+          "clientName": "Alessandra Sauer",
+          "cost": 60,
+          "revenue": 24,
+          "date": "2019-01-07T18:48:41.176Z",
+          "type": "Type 1",
+          "duration": 41
+        },
+        {
+          "id": 32,
+          "clientName": "Emery Wiza",
+          "cost": 80,
+          "revenue": 29,
+          "date": "2019-01-16T18:50:32.281Z",
+          "type": " Type 4",
+          "duration": 36
+        },
+        {
+          "id": 31,
+          "clientName": "Miss Jaquan Olson",
+          "cost": 19,
+          "revenue": 44,
+          "date": "2019-02-05T18:54:39.181Z",
+          "type": "Type 1",
+          "duration": 16
+        },
+        {
+          "id": 95,
+          "clientName": "Edgardo Barrows",
+          "cost": 28,
+          "revenue": 73,
+          "date": "2019-02-28T18:59:23.116Z",
+          "type": "Type 1",
+          "duration": 45
+        },
+        {
+          "id": 10,
+          "clientName": "Yadira Rice",
+          "cost": 85,
+          "revenue": 6,
+          "date": "2019-03-18T19:03:05.326Z",
+          "type": " Type 2",
+          "duration": 38
+        },
+        {
+          "id": 39,
+          "clientName": "Cicero Fritsch",
+          "cost": 38,
+          "revenue": 33,
+          "date": "2019-03-26T19:04:44.086Z",
+          "type": "Type 1",
+          "duration": 31
+        },
+        {
+          "id": 52,
+          "clientName": "America O'Conner",
+          "cost": 76,
+          "revenue": 32,
+          "date": "2019-04-13T19:08:26.296Z",
+          "type": "Type 1",
+          "duration": 30
+        },
+        {
+          "id": 27,
+          "clientName": "Miss Jerel Daugherty",
+          "cost": 67,
+          "revenue": 51,
+          "date": "2019-05-03T19:12:33.196Z",
+          "type": " Type 3",
+          "duration": 27
+        },
+        {
+          "id": 51,
+          "clientName": "Korey Kemmer",
+          "cost": 77,
+          "revenue": 86,
+          "date": "2019-05-16T19:15:13.681Z",
+          "type": " Type 2",
+          "duration": 46
+        },
+        {
+          "id": 85,
+          "clientName": "Mara Parisian",
+          "cost": 43,
+          "revenue": 89,
+          "date": "2019-05-30T19:18:06.511Z",
+          "type": "Type 1",
+          "duration": 22
+        },
+        {
+          "id": 69,
+          "clientName": "Dominique Lehner",
+          "cost": 70,
+          "revenue": 80,
+          "date": "2019-06-11T19:20:34.651Z",
+          "type": "Type 1",
+          "duration": 49
+        },
+        {
+          "id": 21,
+          "clientName": "Florence Miller",
+          "cost": 61,
+          "revenue": 26,
+          "date": "2019-07-08T19:26:07.966Z",
+          "type": " Type 3",
+          "duration": 42
+        },
+        {
+          "id": 37,
+          "clientName": "Sid Zulauf",
+          "cost": 82,
+          "revenue": 82,
+          "date": "2019-07-28T19:30:14.866Z",
+          "type": " Type 4",
+          "duration": 46
+        },
+        {
+          "id": 54,
+          "clientName": "Afton Kertzmann",
+          "cost": 39,
+          "revenue": 31,
+          "date": "2019-08-09T19:32:43.006Z",
+          "type": "Type 1",
+          "duration": 46
+        },
+        {
+          "id": 5,
+          "clientName": "Blanche Glover",
+          "cost": 66,
+          "revenue": 10,
+          "date": "2019-08-26T19:36:12.871Z",
+          "type": " Type 3",
+          "duration": 50
+        },
+        {
+          "id": 67,
+          "clientName": "Stephen Dibbert",
+          "cost": 95,
+          "revenue": 96,
+          "date": "2019-09-18T19:40:56.806Z",
+          "type": " Type 2",
+          "duration": 58
+        },
+        {
+          "id": 53,
+          "clientName": "Ruthe Hodkiewicz",
+          "cost": 37,
+          "revenue": 37,
+          "date": "2019-10-16T19:46:42.466Z",
+          "type": " Type 2",
+          "duration": 35
+        },
+        {
+          "id": 22,
+          "clientName": "Armando Raynor",
+          "cost": 78,
+          "revenue": 23,
+          "date": "2019-10-30T19:49:35.296Z",
+          "type": " Type 2",
+          "duration": 54
+        },
+        {
+          "id": 41,
+          "clientName": "Fredrick Boehm V",
+          "cost": 29,
+          "revenue": 62,
+          "date": "2019-11-25T19:54:56.266Z",
+          "type": " Type 3",
+          "duration": 25
+        }
+      ]
+    }
+  ]
