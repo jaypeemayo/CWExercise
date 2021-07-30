@@ -1,6 +1,4 @@
 
-using CWExerciseWebApi.BLL;
-using CWExerciseWebApi.BLL.Services;
 using CWExerciseWebApi.Common.Authentication;
 using CWExerciseWebApi.Common.Models;
 using Microsoft.Extensions.Configuration;

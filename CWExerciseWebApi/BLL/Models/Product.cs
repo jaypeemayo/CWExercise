@@ -14,8 +14,4 @@ namespace CWExercise.BLL.Models
 		public bool Active { get; set; }
 	}
 
-	public class Simple
-	{
-		public string FirstName { get; set; }
-	}
 }

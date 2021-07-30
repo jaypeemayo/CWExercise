@@ -16,6 +16,6 @@ namespace CWExerciseApi.BLL.Services
 
         Task<Product> Get(int id);
 
-        Task<List<Product>> GetAll();
+        Task<ProductTableInfo> Get(ProductGetParam getParam);
     }
 }

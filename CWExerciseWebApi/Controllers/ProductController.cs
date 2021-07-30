@@ -20,15 +20,9 @@ namespace CWExerciseApi.Controllers
             this.productService = productService;
         }
 
-        [HttpGet("{searchText?}/{start?}/{end?}/{searchTextType?}"), Authorize]
-		public Product[] Get(string searchText = null, DateTime? start = null, DateTime? end = null, string searchTextType = null)
-		{
-			return null;
-		}
-
-		[HttpPost]
+        [HttpPost]
         public async Task<int> PostProduct([FromBody]Product product)
-		{
+        {
             return await productService.Create(product);
         }
 
@@ -50,10 +44,16 @@ namespace CWExerciseApi.Controllers
             return await productService.Get(id);
         }
 
-        [HttpGet()]
-        public async Task<List<Product>> GetProduct()
+        [HttpGet("{pageNumber?}/{pageSize?}/{columnToSort?}/{sortDirection?}")]
+        public async Task<ProductTableInfo> GetProduct(int pageNumber, int pageSize, string columnToSort, int sortDirection)
         {
-            return await productService.GetAll();
+            return await productService.Get(new ProductGetParam() { 
+   
+                PageNumber=pageNumber,
+                PageSize = pageSize,
+                ColumnToSort = columnToSort,
+                SortDirection = (SortEnum)sortDirection,
+            });
         }
     }
 }
