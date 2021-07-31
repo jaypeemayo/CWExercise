@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CWExerciseApi.BLL.Services
 {
-    public interface IDataReadService
+    public interface IDataService
     {
-        Task<int> Create(Product product);
-        Task<int> Update(int productID, Product product);
-        Task<int> Delete(int productID);
+        Task<bool> Create(Product product);
+        Task<bool> Update(int productID, Product product);
+        Task<bool> Delete(int productID);
         Task<Product> Get(int productID);
         Task<List<Product>> GetAll();
     }

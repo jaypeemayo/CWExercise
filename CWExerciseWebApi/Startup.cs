@@ -51,7 +51,7 @@ namespace CWExerciseWebApi
 
             services.AddMvc();
             services.AddScoped<IAuthenticationService, AuthenticationService>();
-            services.AddScoped<IDataReadService, SQLDataService>();
+            services.AddScoped<IDataService, SQLDataService>();
             services.AddScoped<IProductService, ProductService>();
         }
 

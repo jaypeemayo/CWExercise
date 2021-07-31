@@ -21,19 +21,19 @@ namespace CWExerciseApi.Controllers
         }
 
         [HttpPost]
-        public async Task<int> PostProduct([FromBody]Product product)
+        public async Task<bool> PostProduct([FromBody]Product product)
         {
             return await productService.Create(product);
         }
 
         [HttpPut("{id}")]
-        public async Task<int> PutProduct(int id, [FromBody] Product product)
+        public async Task<bool> PutProduct(int id, [FromBody] Product product)
 		{
             return await productService.Update(id, product);
 		}
 
         [HttpDelete("{id}")]
-        public async Task<int> DeleteProduct(int id)
+        public async Task<bool> DeleteProduct(int id)
         {
             return await productService.Delete(id);
         }

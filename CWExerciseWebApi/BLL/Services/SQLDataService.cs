@@ -1,4 +1,5 @@
 ﻿using CWExercise.BLL.Models;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -6,140 +7,186 @@ using System.Threading.Tasks;
 
 namespace CWExerciseApi.BLL.Services
 {
-    internal class SQLDataService : IDataReadService
+    internal class SQLDataService : IDataService
     {
-        private readonly string _connectionString = "Server=sqlconnectortest.database.windows.net;Database=sqlconnectortest;User Id=sqladmin;Password=password123#;Encrypt=true;TrustServerCertificate=True;";
-        public async Task<int> Create(Product product)
+        private string _connectionString = "";
+        public SQLDataService(IConfiguration configuration)
+        {
+            _connectionString = configuration["ConnectionStrings:value"];
+        }
+
+        public async Task<bool> Create(Product product)
         {
 
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            try
             {
-                String query = "INSERT INTO [dbo].[Product] (Name,Price,Type,Active) VALUES (@name,@price,@type, @active)";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
-                    command.Parameters.AddWithValue("@name", product.Name);
-                    command.Parameters.AddWithValue("@price", product.Price);
-                    command.Parameters.AddWithValue("@type", (int)product.Type);
-                    command.Parameters.AddWithValue("@active", product.Active);
+                    String query = "INSERT INTO [dbo].[Product] (Name,Price,Type,Active) VALUES (@name,@price,@type, @active)";
 
-                    connection.Open();
-                    int result = await command.ExecuteNonQueryAsync();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@name", product.Name);
+                        command.Parameters.AddWithValue("@price", product.Price);
+                        command.Parameters.AddWithValue("@type", (int)product.Type);
+                        command.Parameters.AddWithValue("@active", product.Active);
 
-                    // Check Error
-                    if (result < 0)
-                        Console.WriteLine("Error inserting data into Database!");
+                        connection.Open();
+                        int result = await command.ExecuteNonQueryAsync();
 
-                    return result;
+                        // Check Error
+                        if (result < 0)
+                            Console.WriteLine("Error inserting data into Database!");
+
+                        return (result == 1) ? true : false;
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                //log ex here...
+                return false;
             }
         }
 
-        public async Task<int> Update(int productID, Product product)
+        public async Task<bool> Update(int productID, Product product)
         {
-
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            try
             {
-                String query = "UPDATE [dbo].[Product] SET Name = @name,  Price = @price,  Type = @type,  Active = @active WHERE ProductID = @productID";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
-                    command.Parameters.AddWithValue("@name", product.Name);
-                    command.Parameters.AddWithValue("@price", product.Price);
-                    command.Parameters.AddWithValue("@type", (int)product.Type);
-                    command.Parameters.AddWithValue("@active", product.Active);
-                    command.Parameters.AddWithValue("@productID", productID);
+                    String query = "UPDATE [dbo].[Product] SET Name = @name,  Price = @price,  Type = @type,  Active = @active WHERE ProductID = @productID";
 
-                    connection.Open();
-                    int result = await command.ExecuteNonQueryAsync();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@name", product.Name);
+                        command.Parameters.AddWithValue("@price", product.Price);
+                        command.Parameters.AddWithValue("@type", (int)product.Type);
+                        command.Parameters.AddWithValue("@active", product.Active);
+                        command.Parameters.AddWithValue("@productID", productID);
 
-                    // Check Error
-                    if (result < 0)
-                        Console.WriteLine("Error updating into Database!");
+                        connection.Open();
+                        int result = await command.ExecuteNonQueryAsync();
 
-                    return result;
+                        // Check Error
+                        if (result < 0)
+                            Console.WriteLine("Error updating into Database!");
+
+                        return (result == 1) ? true : false;
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                //log ex here...
+                return false;
+            }
+
         }
 
-        public async Task<int> Delete(int productID)
+        public async Task<bool> Delete(int productID)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            try
             {
-                String query = "DELETE FROM [dbo].[Product] WHERE ProductID = @productID";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
-                    command.Parameters.AddWithValue("@productID", productID);
+                    String query = "DELETE FROM [dbo].[Product] WHERE ProductID = @productID";
 
-                    connection.Open();
-                    int result = await command.ExecuteNonQueryAsync();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@productID", productID);
 
-                    // Check Error
-                    if (result < 0)
-                        Console.WriteLine("Error deleting product from Database!");
+                        connection.Open();
+                        int result = await command.ExecuteNonQueryAsync();
 
-                    return result;
+                        // Check Error
+                        if (result < 0)
+                            Console.WriteLine("Error deleting product from Database!");
+
+                        return (result == 1) ? true : false;
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                //log ex here...
+                return false;
+            }
+
         }
 
         public async Task<List<Product>> GetAll()
         {
-            var products = new List<Product>();
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            try
             {
-                String query = "Select * FROM [dbo].[Product]";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
+                var products = new List<Product>();
+                using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
-                    connection.Open();
-                    using (SqlDataReader reader = await command.ExecuteReaderAsync())
-                    {
-                        while (await reader.ReadAsync())
-                        {
-                            var product = new Product();
-                            product.ProductID = (int)reader["productid"];
-                            product.Name = reader["name"].ToString();
-                            product.Price = (decimal)reader["price"];
-                            product.Type = (ProductTypeEnum)reader["type"];
-                            product.Active = (bool)reader["active"];
-                            products.Add(product);
+                    String query = "Select * FROM [dbo].[Product]";
 
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        connection.Open();
+                        using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                        {
+                            while (await reader.ReadAsync())
+                            {
+                                var product = new Product();
+                                product.ProductID = (int)reader["productid"];
+                                product.Name = reader["name"].ToString();
+                                product.Price = (decimal)reader["price"];
+                                product.Type = (ProductTypeEnum)reader["type"];
+                                product.Active = (bool)reader["active"];
+                                products.Add(product);
+
+                            }
                         }
                     }
                 }
-            }
 
-            return products;
+                return products;
+            }
+            catch (Exception ex)
+            {
+                //log ex here...
+                return null;
+            }
         }
 
         public async Task<Product> Get(int productID)
         {
-            var product = new Product();
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            try
             {
-                String query = "Select * FROM [dbo].[Product]  WHERE ProductID = @productID";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
+                var product = new Product();
+                using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
-                    command.Parameters.AddWithValue("@productID", productID);
-                    connection.Open();
-                    using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                    String query = "Select * FROM [dbo].[Product]  WHERE ProductID = @productID";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        if (await reader.ReadAsync())
+                        command.Parameters.AddWithValue("@productID", productID);
+                        connection.Open();
+                        using (SqlDataReader reader = await command.ExecuteReaderAsync())
                         {
-                            product.ProductID = (int)reader["productid"];
-                            product.Name = reader["name"].ToString();
-                            product.Price = (decimal)reader["price"];
-                            product.Type = (ProductTypeEnum)reader["type"];
-                            product.Active = (bool)reader["active"];
+                            if (await reader.ReadAsync())
+                            {
+                                product.ProductID = (int)reader["productid"];
+                                product.Name = reader["name"].ToString();
+                                product.Price = (decimal)reader["price"];
+                                product.Type = (ProductTypeEnum)reader["type"];
+                                product.Active = (bool)reader["active"];
+                            }
                         }
                     }
                 }
-            }
 
-            return product;
+                return product;
+            }
+            catch (Exception ex)
+            {
+                //log ex here...
+                return null;
+            }
         }
     }
 }
