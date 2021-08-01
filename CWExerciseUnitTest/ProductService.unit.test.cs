@@ -6,10 +6,10 @@ using System.Collections.Generic;
 
 namespace CWExerciseUnitTest
 {
-    [TestClass]
-    public class ProductServiceTest
-    {
-        [TestMethod]
+	[TestClass]
+	public class ProductServiceTest
+	{
+		[TestMethod]
 		public void CreateProduct_Success()
 		{
 			Product product = new Product();
@@ -89,7 +89,7 @@ namespace CWExerciseUnitTest
 			var result = service.Get(getParam).Result;
 
 			Assert.AreEqual(1, result.Products[0].ProductID);
-		    Assert.AreEqual(2, result.Products[1].ProductID);
+			Assert.AreEqual(2, result.Products[1].ProductID);
 			Assert.AreEqual(3, result.Products[2].ProductID);
 		}
 
