@@ -47,7 +47,7 @@ namespace CWExerciseWebApi.Common.Authentication
         {
             UserModel user = null;
 
-            if (login.Username == "admin" && login.Password == "TestPass!123")
+            if (login.Username == "admin" && login.Password == "TestPass!123") //this is only for exercise purpose.
             {
                 user = new UserModel { Name = "admin", Email = "admin@gg.com" };
             }

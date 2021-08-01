@@ -1,11 +1,12 @@
 ﻿using CWExercise.BLL.Models;
 using CWExerciseApi.BLL.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace CWExerciseApi.Controllers
 {
-	[Route("api/[controller]")]
+	[Route("api/[controller]"), Authorize]
 	public class ProductController : Controller
 	{
 		private readonly IProductService productService;
